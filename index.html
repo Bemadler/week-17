@@ -11,12 +11,71 @@
 	</head>
 
 	<body>
-        <div class="container">
-            <h1>Transport Information</h1>
-            <div class="transport-list">
-                
-            </div>
-        </div>
-        <script src="/assets/index.js"></script>
-    </body>
+		<div class="container">
+			<h1>Выберите транспорт</h1>
+			<label for="transportSelect">Выберите транспорт:</label>
+			<select id="transportSelect" onchange="updateInfo()">
+				<option value="car">Автомобиль</option>
+				<option value="bike">Мотоцикл</option>
+			</select>
+			<button type="submit" onclick="showOptions()">Выбрать</button>
+			<img class="logoPic" src="/assets/enviromentally-friendly.png" title="transport icons" id="transportImage" />
+			<p id="transportInfo">Информация о транспорте: </p>
+		</div>
+        <div id="infoContainer">
+			<div class="hiddenCars" id="carSelect">
+				<div id="car1">
+					<img class="cars" id="mercedesPic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/2019_Mercedes-Benz_E220d_SE_Automatic_2.0_Front.jpg/300px-2019_Mercedes-Benz_E220d_SE_Automatic_2.0_Front.jpg">
+					<br>
+					<button type="submit" onclick="showTransportInfo('info')">Информация</button>
+					<p id="info">Тип: Машина</p>
+					<p id="info">Бренд: Mercedes-Benz</p>
+					<button type="submit" onclick="showTransportDetails('doors')">Сколько дверей</button>
+					<p id="doors">Двери: 4</p>
+					<button type="submit" onclick="showTransportPrice('price')">Какая цена</button>
+					<p id="price">Цена: 2800000</p>
+					
+				</div>
+				<div id="car2">
+					<img class="cars" id="audiPic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/2020_Audi_e-Tron_Sport_50_Quattro.jpg/1200px-2020_Audi_e-Tron_Sport_50_Quattro.jpg">
+					<br>
+					<button type="submit" onclick="showTransportInfo('info')">Информация</button>
+					<p id="info">Тип: Машина</p>
+					<p id="info">Бренд: Audi</p>
+					<button type="submit" onclick="showTransportDetails('doors')">Сколько дверей</button>
+					<p id="doors">Двери: 4</p>
+					<button type="submit" onclick="showTransportPrice('price')">Какая цена</button>
+					<p id="price">Цена: 4300000</p>
+					
+				</div>
+			</div>			
+			<div class="hiddenBikes" id="bikeSelect">
+				<div id="bike1">
+					<img class="imgbikes" id="harleyPic1" src="https://www.harley-davidson.com/content/dam/h-d/images/product-images/bikes/motorcycle/2022/2022-iron-883/2022-iron-883-016/2022-iron-883-016-motorcycle.jpg">
+					<br>
+					<button type="submit" onclick="showTransportInfo('info')">Информация</button>
+					<p id="info">Тип: Мотоцикл</p>
+					<p id="info">Бренд: Harley-Davidson</p>
+					<button type="submit" onclick="showTransportMaxSpeed('maxSpeed')">Скорость байка</button>
+					<p id="maxSpeed">Максимальная скорость: 210</p>
+					<button type="submit" onclick="showTransportPrice('price')">Какая цена</button>
+					<p id="price">Цена: 130000</з>
+					
+				</div>
+				<div id="bike2">
+					<img class="imgbikes" id="harleyPic2" src="https://cdn.dealerspike.com/imglib/products/harley-showroom/2020/livewire/main/Vivid-Black-Main.png"/>
+					<br>
+					<button type="submit" onclick="showTransportInfo('info')">Информация</button>
+					<p id="info">Тип: Мотоцикл</p>
+					<p id="info">Бренд: Harley-Davidson</p>
+					<button type="submit" onclick="showTransportMaxSpeed('maxSpeed')">Скорость байка</button>
+					<p id="maxSpeed">Максимальная скорость: 220</p>
+					<button type="submit" onclick="showTransportPrice('price')">Какая цена</button>
+					<p id="price">Цена: 140000</p>
+					
+				</div>
+			</div>
+		</div>
+		<script src="/assets/index.js"></script>
+	</body>
 </html>
