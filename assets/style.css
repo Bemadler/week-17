@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.transport-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.transport-item {
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.transport-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.transport-info {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.price {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Дополнительные стили для Car и Bike могут быть добавлены */
